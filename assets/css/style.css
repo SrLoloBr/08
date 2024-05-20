@@ -40,7 +40,8 @@ header a{
 }
 .line01,
 .line03,
-.line04{
+.line04,
+.line07{
     display: flex;
 }
 .box-left,
@@ -62,7 +63,8 @@ header a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.box-left p{
+.box-left p,
+footer .row .col p{
     color: rgb(108, 117, 125);
 }
 .box-left button,
@@ -120,8 +122,7 @@ header a{
 }
 .row .col-left h2,
 .line03 .box-left h2,
-.line04 .box-left h2,
-.line06 .row h2{
+.line04 .box-left h2{
     margin-top: 1rem;
     font-size: calc(1.625rem + .8vw);
 }
@@ -228,7 +229,11 @@ header a{
     padding: 4rem;
 }
 .line06 .row h5{
-    font-size: calc(1.275rem + .3vw)!important;
+    font-size: calc(1.275rem + .2vw)!important;
+}
+.line06 .row h2{
+    margin-top: 1.5rem;
+    font-size: calc(1.625rem + 2.5vw);
 }
 .line06 .slide{
     margin-left: 4rem;
@@ -249,61 +254,56 @@ header a{
     width: auto;
     height: 70%;
 }
-#imagem{
-    width: 1.5rem;
-    height: 1.5rem;
-}
-.card footer img{
-    width: 3rem;
-    height: 3rem;
-}
-.card{
-    margin-top: 3rem;
-}
-.swiper-slide  .card p{
-    margin-left: 1rem;
-}
-#yeah{
-    color: rgb(108, 117, 125);
-}
-#foto{
-    border-radius: 50%;
-    margin-left: 1rem;
+.line06 .slide .card .footer{
+    display: flex;
+    width: auto;
+    height: 30%;
     margin-top: 1rem;
 }
-footer .i-dont-understand{
-    margin-top: -2.8rem;
-    margin-left: 4rem;
+.line06 .slide .card img{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+.line06 .slide .card p{
+    color: rgb(108, 117, 125);
+    font-size: 1rem;
+}
+.line06 .slide .card .footer p{
     color: #fff;
+    font-size: 1rem;
 }
-.linha07{
+.line06 .slide .card .footer p span{
+    font-size: .8rem;
+    color: rgb(108, 117, 125);
+}
+.line07 .row{
     display: flex;
-}
-.linha07 .row{
     justify-content: center;
     align-items: center;
-    color: #FFF;
+    flex-direction: column;
     margin-top: 7rem;
-    background-color: rgb(5,137,220);
+    margin-bottom: 7rem;
+    background: rgb(5,137,220);
     background: linear-gradient(45deg, rgba(5,137,220,1) 0%, rgba(2,198,210,1) 100%);
     width: 80rem;
     height: 22rem;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
 }
-.linha07 .row h2{
-    text-align: center;
+.line07 .row h2{
     margin-top: 2rem;
+    text-align: center;
     font-size: calc(1.625rem + 2.5vw);
 }
-.linha07 .row button{
+.line07 .row button{
     width: 10rem;
     height: 3rem;
     border: none;
     background-color: #FFF;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.linha07 .row button p{
+.line07 .row button p{
     background: -webkit-linear-gradient(90deg, rgba(13,202,240,1) 0%, rgba(2,198,210,1) 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -321,6 +321,54 @@ footer .row .col:hover{
     background-color: #000;
 }
 footer .row .col span{
-    width: 2rem;
-    display: block;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+footer .row .col p{
+    margin-top: .5rem;
+    margin-left: .8rem;
+}
+footer .row .col li{
+    list-style: none;
+    margin-top: 1rem;
+}
+footer .row .col h3{
+    color: rgb(108, 117, 125);
+    font-size: 2rem;
+}
+footer .row .col h2{
+    color: rgb(108, 117, 125);
+    margin-top: 1.6rem;
+}
+footer .row .col a{
+    text-decoration: none;
+    color: rgb(108, 117, 125);
+}
+footer .row .col label{
+    display: flex;
+    margin: 1rem 0;
+}
+footer .row .col input{
+    height: 2rem;
+    padding-left: 1rem;
+    border: none;
+}
+footer .row .col button{
+    width: 6rem;
+    border: none;
+    background: rgba(5,137,220,1);
+    background: linear-gradient(45deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+}
+footer .row .col .end{
+    margin-left: 0;
+}
+footer .copyright{
+    width: 80rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .copyright p{
+    color: rgb(108, 117, 125);
 }
